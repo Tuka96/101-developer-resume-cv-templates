@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: TestWebapp
+  description: Sample TestWebapp
+  version: 3.0.0
+servers:
+- url: https://localhost:44319//v1
+  description: "Optional server description, e.g. Main (production) server"
+paths:
+  /api/Home:
+    get:
+      summary: Returns a list of users.
+      description: Test Yaml.
+      responses:
+        "200":
+          description: return ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+components: {}
